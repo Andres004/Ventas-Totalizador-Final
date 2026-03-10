@@ -91,5 +91,17 @@ it("5. debería calcular el monto del impuesto para CA (8.25% de 100)", () => {
     expect(totalizador.getTotal()).toEqual(1050.025);
    });
 
+   it("11. debería obtener 5% de descuento para un neto de 3000", () => {
+    let totalizador = new Totalizador();
+    totalizador.setCantidad(30);
+    totalizador.setPrecio(100); // Neto = 3000
+    expect(totalizador.getDescuentoPorcentaje()).toEqual(0.05);
+  });
 
+  it("12. debería obtener 10% de descuento para un neto de 10000", () => {
+    let totalizador = new Totalizador();
+    totalizador.setCantidad(1000);
+    totalizador.setPrecio(7); // Neto = 7000
+    expect(totalizador.getDescuentoPorcentaje()).toEqual(0.07);
+  });
 });

@@ -70,9 +70,47 @@
     "testId": 4
   },
   {
-    "commitId": "HEAD",
+    "commitId": "358ecc024e9df0b9bcc4527ff7f8a2ad6dd85153",
     "commitName": "feat: calcular total com descuentos e impuestos",
     "commitTimestamp": 1773136289352,
     "testId": 5
+  },
+  {
+    "numPassedTests": 13,
+    "failedTests": 2,
+    "numTotalTests": 15,
+    "timestamp": 1773136761171,
+    "success": false,
+    "testId": 6
+  },
+  {
+    "numPassedTests": 13,
+    "failedTests": 1,
+    "numTotalTests": 14,
+    "timestamp": 1773136783831,
+    "success": false,
+    "testId": 6
+  },
+  {
+    "numPassedTests": 13,
+    "failedTests": 1,
+    "numTotalTests": 14,
+    "timestamp": 1773136840051,
+    "success": false,
+    "testId": 6
+  },
+  {
+    "numPassedTests": 14,
+    "failedTests": 0,
+    "numTotalTests": 14,
+    "timestamp": 1773136865760,
+    "success": true,
+    "testId": 6
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: calcular total con descuento para 7000",
+    "commitTimestamp": 1773136893394,
+    "testId": 6
   }
 ]

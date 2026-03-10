@@ -5,7 +5,9 @@ const cantidadInput = document.querySelector("#cantidad-input");
 const precioInput = document.querySelector("#precio-input");
 const estadoInput = document.querySelector("#estado-input");
 
-
+// Selectores para mostrar resultados
+const cantDisplay = document.querySelector("#cantidad-display"); // AGREGADO
+const precDisplay = document.querySelector("#precio-display"); // AGREGADO
 const netoDisplay = document.querySelector("#neto-display");
 const descPorcDisplay = document.querySelector("#desc-porc-display");
 const descMontoDisplay = document.querySelector("#desc-monto-display");
@@ -26,6 +28,11 @@ form.addEventListener("submit", (event) => {
   totalizador.setPrecio(precio);
   totalizador.setEstado(estado);
 
+  // --- NUEVAS LÍNEAS PARA QUE SE VEA TODO ---
+  cantDisplay.innerText = totalizador.getCantidad();
+  precDisplay.innerText = totalizador.getPrecio().toFixed(2);
+  // ------------------------------------------
+
   netoDisplay.innerText = totalizador.getNeto().toFixed(2);
   
   descPorcDisplay.innerText = (totalizador.getDescuentoPorcentaje() * 100);
@@ -34,6 +41,5 @@ form.addEventListener("submit", (event) => {
   impPorcDisplay.innerText = (totalizador.getImpuestoPorcentaje() * 100).toFixed(2);
   impMontoDisplay.innerText = totalizador.getImpuestoMonto().toFixed(2);
 
- 
   totalDisplay.innerText = totalizador.getTotal().toFixed(2);
 });
