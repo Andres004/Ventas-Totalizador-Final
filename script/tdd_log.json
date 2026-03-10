@@ -64,9 +64,15 @@
     "testId": 4
   },
   {
-    "commitId": "HEAD",
+    "commitId": "979bf7d7d34fc1a019f2e5713ca085c537d0c65a",
     "commitName": "feat: aplicar para todos los estados",
     "commitTimestamp": 1773136201727,
     "testId": 4
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: calcular total com descuentos e impuestos",
+    "commitTimestamp": 1773136289352,
+    "testId": 5
   }
 ]

@@ -76,17 +76,36 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "979bf7d7d34fc1a019f2e5713ca085c537d0c65a",
     "author": "unknown",
     "commit": {
       "date": "2026-03-10T09:50:00.000Z",
       "message": "feat: aplicar para todos los estados",
-      "url": "https://github.com/Andres004/Ventas-Totalizador-Final/commit/HEAD"
+      "url": "https://github.com/Andres004/Ventas-Totalizador-Final/commit/979bf7d7d34fc1a019f2e5713ca085c537d0c65a"
     },
     "stats": {
       "total": 96,
       "additions": 86,
       "deletions": 10,
+      "date": "2026-03-10"
+    },
+    "coverage": 100,
+    "test_count": 12,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "unknown",
+    "commit": {
+      "date": "2026-03-10T09:51:28.000Z",
+      "message": "feat: calcular total com descuentos e impuestos",
+      "url": "https://github.com/Andres004/Ventas-Totalizador-Final/commit/HEAD"
+    },
+    "stats": {
+      "total": 1,
+      "additions": 1,
+      "deletions": 0,
       "date": "2026-03-10"
     },
     "coverage": 100,
