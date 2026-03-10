@@ -226,9 +226,23 @@
     "testId": 15
   },
   {
-    "commitId": "HEAD",
+    "commitId": "5d94e3637c4cc884e589d3a2c2944bda3bccb2d1",
     "commitName": "feat: implementacion del costo de envio",
     "commitTimestamp": 1773141521905,
     "testId": 15
+  },
+  {
+    "numPassedTests": 32,
+    "failedTests": 0,
+    "numTotalTests": 32,
+    "timestamp": 1773141730466,
+    "success": true,
+    "testId": 16
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: implementacion de metodos de envios",
+    "commitTimestamp": 1773141761507,
+    "testId": 16
   }
 ]

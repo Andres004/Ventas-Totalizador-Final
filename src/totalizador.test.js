@@ -204,5 +204,16 @@ it("5. debería calcular el monto del impuesto para CA (8.25% de 100)", () => {
     expect(totalizador.getCostoEnvio()).toEqual(20);
   });
 
+  it("31. debería permitir setear y obtener el método de envío", () => {
+    let totalizador = new Totalizador();
+    totalizador.setMetodoEnvio("Express");
+    expect(totalizador.getMetodoEnvio()).toEqual("Express");
+  });
+
+  it("31. debería tener 'Económico' como método de envío por defecto", () => {
+    let totalizador = new Totalizador();
+    expect(totalizador.getMetodoEnvio()).toEqual("Económico");
+  });
+
 
 });

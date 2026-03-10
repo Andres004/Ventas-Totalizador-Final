@@ -6,6 +6,7 @@ const precioInput = document.querySelector("#precio-input");
 const pesoInput = document.querySelector("#peso-input");
 const estadoSelect = document.querySelector("#estado-select");
 const categoriaSelect = document.querySelector("#categoria-select");
+const envioSelect = document.querySelector("#envio-select");
 
 // Selectores para mostrar resultados
 const cantDisplay = document.querySelector("#cantidad-display"); 
@@ -31,12 +32,14 @@ form.addEventListener("submit", (event) => {
   const peso = Number.parseFloat(pesoInput.value);
   const estado = estadoSelect.value;
   const categoria = categoriaSelect.value;
+  const metodoEnvio = envioSelect.value;
 
   totalizador.setCantidad(cantidad);
   totalizador.setPrecio(precio);
   totalizador.setPesoVolumetrico(peso);
   totalizador.setEstado(estado);
   totalizador.setCategoria(categoria);
+  totalizador.setMetodoEnvio(metodoEnvio);
 
   cantDisplay.innerText = totalizador.getCantidad();
   precDisplay.innerText = totalizador.getPrecio().toFixed(2);

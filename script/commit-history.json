@@ -285,12 +285,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "5d94e3637c4cc884e589d3a2c2944bda3bccb2d1",
     "author": "unknown",
     "commit": {
       "date": "2026-03-10T11:18:40.000Z",
       "message": "feat: implementacion del costo de envio",
-      "url": "https://github.com/Andres004/Ventas-Totalizador-Final/commit/HEAD"
+      "url": "https://github.com/Andres004/Ventas-Totalizador-Final/commit/5d94e3637c4cc884e589d3a2c2944bda3bccb2d1"
     },
     "stats": {
       "total": 18,
@@ -300,6 +300,25 @@
     },
     "coverage": 100,
     "test_count": 30,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "unknown",
+    "commit": {
+      "date": "2026-03-10T11:22:40.000Z",
+      "message": "feat: implementacion de metodos de envios",
+      "url": "https://github.com/Andres004/Ventas-Totalizador-Final/commit/HEAD"
+    },
+    "stats": {
+      "total": 32,
+      "additions": 32,
+      "deletions": 0,
+      "date": "2026-03-10"
+    },
+    "coverage": 100,
+    "test_count": 32,
     "failed_tests": 0,
     "conclusion": "success"
   }
