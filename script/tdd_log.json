@@ -146,9 +146,31 @@
     "testId": 10
   },
   {
-    "commitId": "HEAD",
+    "commitId": "06b356e1fde658db3b448976d2f4f62294b2e5c8",
     "commitName": "feat: crear categorias y definir varios como predeterminada",
     "commitTimestamp": 1773139572072,
     "testId": 11
+  },
+  {
+    "numPassedTests": 19,
+    "failedTests": 0,
+    "numTotalTests": 19,
+    "timestamp": 1773139632364,
+    "success": true,
+    "testId": 12
+  },
+  {
+    "numPassedTests": 21,
+    "failedTests": 0,
+    "numTotalTests": 21,
+    "timestamp": 1773140128441,
+    "success": true,
+    "testId": 12
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: crear impuesto para bebidas alcoholicas",
+    "commitTimestamp": 1773140175922,
+    "testId": 12
   }
 ]

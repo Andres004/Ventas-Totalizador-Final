@@ -5,6 +5,15 @@ class Totalizador {
     this.estado = "CA";
     this.categoria = "Varios";
     this.impuestos = { "UT": 0.0665, "NV": 0.08, "TX": 0.0625, "AL": 0.04, "CA": 0.0825 };
+    this.impuestosCategoria = { "Alimentos": 0,"Varios": 0,"Bebidas alcohólicas": 0.07 };
+}
+
+  getImpuestoCategoriaPorcentaje() {
+    return this.impuestosCategoria[this.categoria] || 0;
+  }
+
+  getImpuestoPorcentajeTotal() {
+    return (this.impuestos[this.estado] || 0) + this.getImpuestoCategoriaPorcentaje();
   }
 
   setCategoria(categoria) {
@@ -14,7 +23,7 @@ class Totalizador {
   getCategoria() {
     return this.categoria;
   }
-  
+
   setCantidad(cantidad) {
     this.cantidad = cantidad;
   }
@@ -61,7 +70,7 @@ class Totalizador {
     return this.getNeto() - this.getDescuentoMonto();
   }
   getImpuestoMonto() {
-    return this.getPrecioConDescuento() * this.getImpuestoPorcentaje();
+    return this.getPrecioConDescuento() * this.getImpuestoPorcentajeTotal();
   }
 
   getTotal() {

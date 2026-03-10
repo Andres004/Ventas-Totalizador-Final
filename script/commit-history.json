@@ -209,12 +209,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "06b356e1fde658db3b448976d2f4f62294b2e5c8",
     "author": "unknown",
     "commit": {
       "date": "2026-03-10T10:46:11.000Z",
       "message": "feat: crear categorias y definir varios como predeterminada",
-      "url": "https://github.com/Andres004/Ventas-Totalizador-Final/commit/HEAD"
+      "url": "https://github.com/Andres004/Ventas-Totalizador-Final/commit/06b356e1fde658db3b448976d2f4f62294b2e5c8"
     },
     "stats": {
       "total": 39,
@@ -224,6 +224,25 @@
     },
     "coverage": 100,
     "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "unknown",
+    "commit": {
+      "date": "2026-03-10T10:56:14.000Z",
+      "message": "feat: crear impuesto para bebidas alcoholicas",
+      "url": "https://github.com/Andres004/Ventas-Totalizador-Final/commit/HEAD"
+    },
+    "stats": {
+      "total": 36,
+      "additions": 28,
+      "deletions": 8,
+      "date": "2026-03-10"
+    },
+    "coverage": 100,
+    "test_count": 21,
     "failed_tests": 0,
     "conclusion": "success"
   }

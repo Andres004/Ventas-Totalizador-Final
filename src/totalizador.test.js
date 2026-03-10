@@ -137,4 +137,16 @@ it("5. debería calcular el monto del impuesto para CA (8.25% de 100)", () => {
     expect(totalizador.getCategoria()).toEqual("Varios");
   });
 
+  it("20. debería obtener el impuesto adicional de 0% para la categoría Alimentos", () => {
+    let totalizador = new Totalizador();
+    totalizador.setCategoria("Alimentos");
+    expect(totalizador.getImpuestoCategoriaPorcentaje()).toEqual(0);
+  });
+
+  it("21. debería obtener el impuesto adicional de 7% para la categoría Bebidas alcohólicas", () => {
+    let totalizador = new Totalizador();
+    totalizador.setCategoria("Bebidas alcohólicas");
+    expect(totalizador.getImpuestoCategoriaPorcentaje()).toEqual(0.07);
+  });
+
 });

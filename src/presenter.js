@@ -13,6 +13,7 @@ const netoDisplay = document.querySelector("#neto-display");
 const descPorcDisplay = document.querySelector("#desc-porc-display");
 const descMontoDisplay = document.querySelector("#desc-monto-display");
 const impPorcDisplay = document.querySelector("#imp-porc-display");
+const impCatPorcDisplay = document.querySelector("#imp-cat-porc-display");
 const impMontoDisplay = document.querySelector("#imp-monto-display");
 const totalDisplay = document.querySelector("#total-display");
 
@@ -38,8 +39,8 @@ form.addEventListener("submit", (event) => {
   
   descPorcDisplay.innerText = (totalizador.getDescuentoPorcentaje() * 100) + "%";
   descMontoDisplay.innerText = totalizador.getDescuentoMonto().toFixed(2);
-
-  impPorcDisplay.innerText = (totalizador.getImpuestoPorcentaje() * 100).toFixed(2) + "%";
+  impCatPorcDisplay.innerText = (totalizador.getImpuestoCategoriaPorcentaje() * 100) + "%";
+  impPorcDisplay.innerText = (totalizador.getImpuestoPorcentajeTotal() * 100).toFixed(2) + "%";
   impMontoDisplay.innerText = totalizador.getImpuestoMonto().toFixed(2);
 
   totalDisplay.innerText = totalizador.getTotal().toFixed(2);
