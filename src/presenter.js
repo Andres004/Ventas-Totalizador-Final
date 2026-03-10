@@ -3,7 +3,7 @@ import Totalizador from "./totalizador.js";
 const form = document.querySelector("#totalizador-form");
 const cantidadInput = document.querySelector("#cantidad-input");
 const precioInput = document.querySelector("#precio-input");
-const estadoInput = document.querySelector("#estado-input");
+const estadoSelect = document.querySelector("#estado-select");
 
 // Selectores para mostrar resultados
 const cantDisplay = document.querySelector("#cantidad-display"); // AGREGADO
@@ -22,16 +22,14 @@ form.addEventListener("submit", (event) => {
 
   const cantidad = Number.parseInt(cantidadInput.value);
   const precio = Number.parseFloat(precioInput.value);
-  const estado = estadoInput.value.toUpperCase();
+  const estado = estadoSelect.value;
 
   totalizador.setCantidad(cantidad);
   totalizador.setPrecio(precio);
   totalizador.setEstado(estado);
 
-  // --- NUEVAS LÍNEAS PARA QUE SE VEA TODO ---
   cantDisplay.innerText = totalizador.getCantidad();
   precDisplay.innerText = totalizador.getPrecio().toFixed(2);
-  // ------------------------------------------
 
   netoDisplay.innerText = totalizador.getNeto().toFixed(2);
   

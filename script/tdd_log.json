@@ -134,9 +134,15 @@
     "testId": 8
   },
   {
-    "commitId": "HEAD",
+    "commitId": "64b126d432b546084b02137919c13d7c7f85625c",
     "commitName": "feat: mostrar porcentajes por simbolo",
     "commitTimestamp": 1773138936019,
     "testId": 9
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: definir california como predeterminado y mostrar una lista de opciones de esrados",
+    "commitTimestamp": 1773139303020,
+    "testId": 10
   }
 ]

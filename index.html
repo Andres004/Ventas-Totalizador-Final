@@ -17,10 +17,17 @@
             <label for="precio-input">Precio por ítem:</label>
             <input type="number" id="precio-input">
         </div>
-        <br>
+       <br>
+
         <div>
-            <label for="estado-input">Estado (2 letras):</label>
-            <input type="text" id="estado-input" maxlength="2">
+            <label for="estado-select">Estado:</label>
+            <select id="estado-select">
+                <option value="CA" selected>California (CA)</option>
+                <option value="TX">Texas (TX)</option>
+                <option value="AL">Alabama (AL)</option>
+                <option value="NV">Nevada (NV)</option>
+                <option value="UT">Utah (UT)</option>
+            </select>
         </div>
         <br>
         <button type="submit" id="totalizar-btn">Calcular</button>

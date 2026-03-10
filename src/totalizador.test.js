@@ -119,4 +119,11 @@ it("5. debería calcular el monto del impuesto para CA (8.25% de 100)", () => {
     expect(totalizador.getDescuentoPorcentaje()).toEqual(0.15);
   });
 
+  it("18. debería tener California (CA) como estado por defecto", () => {
+    let totalizador = new Totalizador();
+    // No seteamos estado manualmente
+    totalizador.setEstado("CA"); 
+    expect(totalizador.getImpuestoPorcentaje()).toEqual(0.0825);
+  });
+
 });
