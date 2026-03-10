@@ -19,12 +19,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "acfdce1086b24853435872083ddb23b897d289a5",
     "author": "unknown",
     "commit": {
       "date": "2026-03-10T09:22:13.000Z",
       "message": "feat: calcular y mostrar el total neto",
-      "url": "https://github.com/Andres004/Ventas-Totalizador-Final/commit/HEAD"
+      "url": "https://github.com/Andres004/Ventas-Totalizador-Final/commit/acfdce1086b24853435872083ddb23b897d289a5"
     },
     "stats": {
       "total": 16,
@@ -34,6 +34,25 @@
     },
     "coverage": 100,
     "test_count": 3,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "unknown",
+    "commit": {
+      "date": "2026-03-10T09:30:05.000Z",
+      "message": "feat: definir impuestos por estados y mostrarlos",
+      "url": "https://github.com/Andres004/Ventas-Totalizador-Final/commit/HEAD"
+    },
+    "stats": {
+      "total": 42,
+      "additions": 38,
+      "deletions": 4,
+      "date": "2026-03-10"
+    },
+    "coverage": 100,
+    "test_count": 4,
     "failed_tests": 0,
     "conclusion": "success"
   }

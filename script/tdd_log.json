@@ -14,9 +14,23 @@
     "testId": 0
   },
   {
-    "commitId": "HEAD",
+    "commitId": "acfdce1086b24853435872083ddb23b897d289a5",
     "commitName": "feat: calcular y mostrar el total neto",
     "commitTimestamp": 1773134534387,
     "testId": 1
+  },
+  {
+    "numPassedTests": 3,
+    "failedTests": 0,
+    "numTotalTests": 3,
+    "timestamp": 1773134559137,
+    "success": true,
+    "testId": 2
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: definir impuestos por estados y mostrarlos",
+    "commitTimestamp": 1773135006930,
+    "testId": 2
   }
 ]

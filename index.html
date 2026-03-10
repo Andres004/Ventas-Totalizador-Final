@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Totalizador - Punto 2</title>
+    <title>Totalizador de Ventas</title>
 </head>
 <body>
     <h1 style="text-align: center;">Totalizador de Ventas</h1>
@@ -13,19 +13,31 @@
             <input type="number" id="cantidad-input">
         </div>
         <br>
+
         <div>
             <label for="precio-input">Precio por ítem:</label>
             <input type="number" id="precio-input">
         </div>
         <br>
-        <button type="submit" id="totalizar-btn">Mostrar Datos</button>
+
+        <div>
+            <label for="estado-input">Estado (2 letras):</label>
+            <input type="text" id="estado-input" maxlength="2">
+        </div>
+        <br>
+
+        <button type="submit" id="totalizar-btn">Calcular</button>
     </form>
 
     <hr>
-    <p style="text-align: end;">Cantidad: <strong><span id="cantidad-display">0</span></strong></p>
-    <p style="text-align: end;">Precio: <strong><span id="precio-display">0</span></strong></p>
-    <p style="text-align: end;"><strong>Precio Neto: $<span id="neto-display">0</span></strong></p>
-    <script type="module" src="./src/presenter.js"></script>
 
+    <p style="text-align: end;">Cantidad: <strong><span id="cantidad-display">0</span></strong></p>
+    <p style="text-align: end;">Precio por ítem: <strong><span id="precio-display">0</span></strong></p>
+    
+    <p style="text-align: end;">Impuesto para el estado: <strong><span id="impuesto-porcentaje-display">0</span>%</strong></p>
+
+    <p style="text-align: end;"><strong>Precio Neto: $<span id="neto-display">0</span></strong></p>
+
+    <script type="module" src="./src/presenter.js"></script>
 </body>
 </html>

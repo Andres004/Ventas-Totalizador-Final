@@ -21,4 +21,11 @@ it("3. Mostrar el precio neto (cantidad items x precio item)", () => {
     totalizador.setPrecio(3);
     expect(totalizador.getNeto()).toEqual(60);
   });
+
+it("4. Mostrar el porcentaje de impuesto que tiene ese estado", () => {
+    let totalizador = new Totalizador();
+    totalizador.setEstado("TX");
+    expect(totalizador.getImpuestoPorcentaje()).toEqual(0.0625);
+  });
+  
 });
