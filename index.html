@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Totalizador - Punto 1</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Totalizador de Ventas</h1>
+
+    <form id="totalizador-form">
+        <div>
+            <label for="cantidad-input">Cantidad de ítems:</label>
+            <input type="number" id="cantidad-input">
+        </div>
+        <br>
+        <button type="submit" id="totalizar-btn">Mostrar Cantidad</button>
+    </form>
+
+    <hr>
+    <p style="text-align: end;">Cantidad: <strong><span id="cantidad-display">0</span></strong></p>
+
+    <script type="module" src="./src/presenter.js"></script>
+</body>
+</html>
