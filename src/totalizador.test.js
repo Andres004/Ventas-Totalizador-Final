@@ -197,12 +197,12 @@ it("5. debería calcular el monto del impuesto para CA (8.25% de 100)", () => {
     expect(totalizador.getPesoVolumetrico()).toEqual(5);
   });
 
-  it("30. debería calcular el costo de envío (peso x cantidad)", () => {
+  it("30. debería calcular el costo de envío (rango 0-10 cuesta 0)", () => {
     let totalizador = new Totalizador();
     totalizador.setCantidad(10);
     totalizador.setPesoVolumetrico(2);
-    expect(totalizador.getCostoEnvio()).toEqual(20);
-  });
+    expect(totalizador.getCostoEnvio()).toEqual(0); // 0 * 10 = 0
+});
 
   it("31. debería permitir setear y obtener el método de envío", () => {
     let totalizador = new Totalizador();
@@ -215,5 +215,41 @@ it("5. debería calcular el monto del impuesto para CA (8.25% de 100)", () => {
     expect(totalizador.getMetodoEnvio()).toEqual("Económico");
   });
 
+  it("32. debería calcular costo de envío Express (Peso 10 es $0 + Recargo 20)", () => {
+    let totalizador = new Totalizador();
+    totalizador.setCantidad(1);
+    totalizador.setPesoVolumetrico(10);
+    totalizador.setMetodoEnvio("Express");
+    expect(totalizador.getCostoEnvio()).toEqual(20); // Cambia 30 por 20
+});
+
+  it("33-39. debería cobrar $0 para peso entre 0 y 10", () => {
+    let totalizador = new Totalizador();
+    totalizador.setCantidad(1);
+    totalizador.setPesoVolumetrico(5);
+    expect(totalizador.getCostoEnvio()).toEqual(0);
+  });
+
+  it("33-39. debería cobrar $5 por unidad para peso de 30 (rango 21-40)", () => {
+    let totalizador = new Totalizador();
+    totalizador.setCantidad(2);
+    totalizador.setPesoVolumetrico(30);
+    expect(totalizador.getCostoEnvio()).toEqual(10); // 5 * 2 unidades
+  });
+
+  it("33-39. debería cobrar $9 por unidad para peso mayor a 200", () => {
+    let totalizador = new Totalizador();
+    totalizador.setCantidad(1);
+    totalizador.setPesoVolumetrico(250);
+    expect(totalizador.getCostoEnvio()).toEqual(9);
+  });
+
+  it("42. debería aplicar descuento extra de 1% para cliente Antiguo", () => {
+    let totalizador = new Totalizador();
+    totalizador.setCantidad(10);
+    totalizador.setPrecio(10);
+    totalizador.setTipoCliente("Antiguo");
+    expect(totalizador.getDescuentoPorcentajeTotal()).toEqual(0.01);
+  });
 
 });

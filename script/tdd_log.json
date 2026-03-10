@@ -240,9 +240,23 @@
     "testId": 16
   },
   {
-    "commitId": "HEAD",
+    "commitId": "d2bb69512dff04a81c930f470de157b646e5a74a",
     "commitName": "feat: implementacion de metodos de envios",
     "commitTimestamp": 1773141761507,
     "testId": 16
+  },
+  {
+    "numPassedTests": 34,
+    "failedTests": 3,
+    "numTotalTests": 37,
+    "timestamp": 1773142474032,
+    "success": false,
+    "testId": 17
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "style: aplicacion de css",
+    "commitTimestamp": 1773143865831,
+    "testId": 17
   }
 ]

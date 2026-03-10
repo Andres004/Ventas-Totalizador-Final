@@ -2,79 +2,124 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Totalizador de Ventas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Totalizador de Ventas - Pro</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1 style="text-align: center;">Totalizador de Ventas</h1>
+    <div class="container">
+        <h1>Totalizador de Ventas</h1>
 
-    <form id="totalizador-form">
-        <div>
-            <label for="cantidad-input">Cantidad de ítems:</label>
-            <input type="number" id="cantidad-input">
-        </div>
-        <br>
-        <div>
-            <label for="precio-input">Precio por ítem:</label>
-            <input type="number" id="precio-input">
-        </div>
-       <br>
+        <div class="main-grid">
+            <div class="card card-form">
+                <h2>Configuración</h2>
+                <form id="totalizador-form">
+                    <div class="input-group">
+                        <label for="cantidad-input">Cantidad de ítems</label>
+                        <input type="number" id="cantidad-input" placeholder="0" required min="1">
+                    </div>
 
-        <div>
-            <label for="estado-select">Estado:</label>
-            <select id="estado-select">
-                <option value="CA" selected>California (CA)</option>
-                <option value="TX">Texas (TX)</option>
-                <option value="AL">Alabama (AL)</option>
-                <option value="NV">Nevada (NV)</option>
-                <option value="UT">Utah (UT)</option>
-            </select>
-        </div>
-        <br>
-        <div>
-            <label for="categoria-select">Categoría:</label>
-            <select id="categoria-select">
-                <option value="Varios" selected>Varios</option>
-                <option value="Alimentos">Alimentos</option>
-                <option value="Bebidas alcohólicas">Bebidas alcohólicas</option>
-                <option value="Material de escritorio">Material de escritorio</option>
-                <option value="Muebles">Muebles</option>
-                <option value="Electrónicos">Electrónicos</option>
-                <option value="Vestimenta">Vestimenta</option>
-            </select>
-        </div>
-        <br>
-        <div>
-            <label for="envio-select">Método de envío:</label>
-            <select id="envio-select">
-                <option value="Económico" selected>Económico</option>
-                <option value="Express">Express</option>
-                <option value="Prioritario">Prioritario</option>
-            </select>
-        </div>
-        <br>
-        <br>
-        <div>
-    <label for="peso-input">Peso volumétrico por unidad:</label>
-    <input type="number" id="peso-input">
-</div>
-<br>
-        <br>
-        <button type="submit" id="totalizar-btn">Calcular</button>
-    </form>
-    <hr>
+                    <div class="input-group">
+                        <label for="precio-input">Precio por ítem ($)</label>
+                        <input type="number" id="precio-input" step="0.01" placeholder="0.00" required min="0.1">
+                    </div>
 
-    <p style="text-align: end;">Cantidad: <strong><span id="cantidad-display">0</span></strong></p>
-    <p style="text-align: end;">Precio por ítem: <strong><span id="precio-display">0</span></strong></p>
-    <p style="text-align: end;">Precio Neto: $<strong><span id="neto-display">0</span></strong></p>
-    <p style="text-align: end;">Descuento total (<span id="desc-porc-display">0</span>): <strong>-$<span id="desc-monto-display">0</span></strong></p>
-    <p style="text-align: end;">Descuento por categoría extra: <strong><span id="desc-cat-display">0%</span></strong></p>
-    <p style="text-align: end;">Impuesto por categoría (<span id="imp-cat-porc-display">0%</span>): <strong>Adicional</strong></p>
-    <p style="text-align: end;">Impuesto para el estado (<span id="imp-porc-display">0</span>): <strong>$<span id="imp-monto-display">0</span></strong></p>
-    <p style="text-align: end;">Peso volumétrico: <strong><span id="peso-display">0</span></strong></p>
-    <p style="text-align: end;">Costo de envío: <strong>$<span id="envio-display">0</span></strong></p>
+                    <div class="input-group">
+                        <label for="peso-input">Peso volumétrico (u)</label>
+                        <input type="number" id="peso-input" step="0.1" placeholder="0" required>
+                    </div>
 
-    <hr>
-    <p style="text-align: end; font-size: 1.2em;"><strong>Precio Total: $<span id="total-display">0</span></strong></p>
+                    <div class="input-group">
+                        <label for="estado-select">Estado</label>
+                        <select id="estado-select">
+                            <option value="CA" selected>California (CA)</option>
+                            <option value="TX">Texas (TX)</option>
+                            <option value="AL">Alabama (AL)</option>
+                            <option value="NV">Nevada (NV)</option>
+                            <option value="UT">Utah (UT)</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="categoria-select">Categoría</label>
+                        <select id="categoria-select">
+                            <option value="Varios" selected>Varios</option>
+                            <option value="Alimentos">Alimentos</option>
+                            <option value="Bebidas alcohólicas">Bebidas alcohólicas</option>
+                            <option value="Material de escritorio">Material de escritorio</option>
+                            <option value="Muebles">Muebles</option>
+                            <option value="Electrónicos">Electrónicos</option>
+                            <option value="Vestimenta">Vestimenta</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="envio-select">Método de envío</label>
+                        <select id="envio-select">
+                            <option value="Económico" selected>Económico</option>
+                            <option value="Express">Express</option>
+                            <option value="Prioritario">Prioritario</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="cliente-select">Tipo de Cliente</label>
+                        <select id="cliente-select">
+                            <option value="Normal" selected>Normal</option>
+                            <option value="Recurrente">Recurrente</option>
+                            <option value="Antiguo">Antiguo</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" id="totalizar-btn">Calcular Total</button>
+                </form>
+            </div>
+
+            <div class="card card-results">
+                <h2>Resumen de Venta</h2>
+                <div class="result-line">
+                    <span>Precio Neto:</span> 
+                    <span id="neto-display" class="val">$0.00</span>
+                </div>
+                
+                <div class="result-line desc">
+                    <span>Descuento Total (<small id="desc-porc-display">0%</small>):</span> 
+                    <span id="desc-monto-display" class="val">-$0.00</span>
+                </div>
+                <div class="result-line small">
+                    <span>Extra por Categoría/Cliente:</span> 
+                    <span id="desc-cat-display" class="val">0%</span>
+                </div>
+                
+                <div class="divider"></div>
+                
+                <div class="result-line">
+                    <span>Impuesto Estado (<small id="imp-porc-display">0%</small>):</span> 
+                    <span id="imp-monto-display" class="val">+$0.00</span>
+                </div>
+                <div class="result-line small">
+                    <span>Impuesto Categoría:</span> 
+                    <span id="imp-cat-porc-display" class="val">0%</span>
+                </div>
+                
+                <div class="divider"></div>
+                
+                <div class="result-line">
+                    <span>Envío (<span id="metodo-res-display">Económico</span>):</span> 
+                    <span id="envio-display" class="val">$0.00</span>
+                </div>
+                
+                <div class="total-box">
+                    <span>PRECIO TOTAL</span>
+                    <span id="total-display">$0.00</span>
+                </div>
+
+                <div class="info-footer">
+                    Peso Total: <span id="peso-display">0</span> | Items: <span id="cantidad-display">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script type="module" src="./src/presenter.js"></script>
 </body>

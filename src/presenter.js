@@ -7,6 +7,7 @@ const pesoInput = document.querySelector("#peso-input");
 const estadoSelect = document.querySelector("#estado-select");
 const categoriaSelect = document.querySelector("#categoria-select");
 const envioSelect = document.querySelector("#envio-select");
+const clienteSelect = document.querySelector("#cliente-select");
 
 // Selectores para mostrar resultados
 const cantDisplay = document.querySelector("#cantidad-display"); 
@@ -21,6 +22,7 @@ const impCatPorcDisplay = document.querySelector("#imp-cat-porc-display");
 const impMontoDisplay = document.querySelector("#imp-monto-display");
 const totalDisplay = document.querySelector("#total-display");
 const envioDisplay = document.querySelector("#envio-display");
+const metodoResDisplay = document.querySelector("#metodo-res-display");
 
 const totalizador = new Totalizador();
 
@@ -40,12 +42,14 @@ form.addEventListener("submit", (event) => {
   totalizador.setEstado(estado);
   totalizador.setCategoria(categoria);
   totalizador.setMetodoEnvio(metodoEnvio);
+  totalizador.setTipoCliente(clienteSelect.value);
 
   cantDisplay.innerText = totalizador.getCantidad();
   precDisplay.innerText = totalizador.getPrecio().toFixed(2);
   pesoDisplay.innerText = totalizador.getPesoVolumetrico();
   netoDisplay.innerText = totalizador.getNeto().toFixed(2);
   envioDisplay.innerText = totalizador.getCostoEnvio().toFixed(2);
+  metodoResDisplay.innerText = totalizador.getMetodoEnvio();
   
   descCatDisplay.innerText = (totalizador.getDescuentoCategoriaPorcentaje() * 100) + "%";
   descPorcDisplay.innerText = (totalizador.getDescuentoPorcentajeTotal() * 100) + "%";
