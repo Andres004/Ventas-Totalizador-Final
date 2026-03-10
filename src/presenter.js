@@ -19,6 +19,7 @@ const impPorcDisplay = document.querySelector("#imp-porc-display");
 const impCatPorcDisplay = document.querySelector("#imp-cat-porc-display");
 const impMontoDisplay = document.querySelector("#imp-monto-display");
 const totalDisplay = document.querySelector("#total-display");
+const envioDisplay = document.querySelector("#envio-display");
 
 const totalizador = new Totalizador();
 
@@ -40,8 +41,8 @@ form.addEventListener("submit", (event) => {
   cantDisplay.innerText = totalizador.getCantidad();
   precDisplay.innerText = totalizador.getPrecio().toFixed(2);
   pesoDisplay.innerText = totalizador.getPesoVolumetrico();
-
   netoDisplay.innerText = totalizador.getNeto().toFixed(2);
+  envioDisplay.innerText = totalizador.getCostoEnvio().toFixed(2);
   
   descCatDisplay.innerText = (totalizador.getDescuentoCategoriaPorcentaje() * 100) + "%";
   descPorcDisplay.innerText = (totalizador.getDescuentoPorcentajeTotal() * 100) + "%";

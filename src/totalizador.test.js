@@ -197,5 +197,12 @@ it("5. debería calcular el monto del impuesto para CA (8.25% de 100)", () => {
     expect(totalizador.getPesoVolumetrico()).toEqual(5);
   });
 
+  it("30. debería calcular el costo de envío (peso x cantidad)", () => {
+    let totalizador = new Totalizador();
+    totalizador.setCantidad(10);
+    totalizador.setPesoVolumetrico(2);
+    expect(totalizador.getCostoEnvio()).toEqual(20);
+  });
+
 
 });

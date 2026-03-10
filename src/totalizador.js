@@ -9,6 +9,11 @@ class Totalizador {
     this.descuentosCategoria = {"Alimentos": 0.02,"Material de escritorio": 0.015,"Electrónicos": 0.01,"Varios": 0,"Bebidas alcohólicas": 0,"Muebles": 0,"Vestimenta": 0};
     this.pesoVolumetrico = 0;
 }
+
+getCostoEnvio() {
+    return this.cantidad * this.pesoVolumetrico;
+  }
+
 setPesoVolumetrico(peso) {
   this.pesoVolumetrico = peso;
 }
@@ -90,7 +95,7 @@ getDescuentoCategoriaPorcentaje() {
   }
 
   getTotal() {
-    return this.getPrecioConDescuento() + this.getImpuestoMonto();
+    return this.getPrecioConDescuento() + this.getImpuestoMonto() + + this.getCostoEnvio();
   }
 
 }

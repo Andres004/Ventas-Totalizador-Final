@@ -266,12 +266,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "a6dcdf7d658c595874a3816670a70a3c81be865c",
     "author": "unknown",
     "commit": {
       "date": "2026-03-10T11:15:37.000Z",
       "message": "feat: crear y mostrar peso volumetrico",
-      "url": "https://github.com/Andres004/Ventas-Totalizador-Final/commit/HEAD"
+      "url": "https://github.com/Andres004/Ventas-Totalizador-Final/commit/a6dcdf7d658c595874a3816670a70a3c81be865c"
     },
     "stats": {
       "total": 80,
@@ -281,6 +281,25 @@
     },
     "coverage": 100,
     "test_count": 29,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "unknown",
+    "commit": {
+      "date": "2026-03-10T11:18:40.000Z",
+      "message": "feat: implementacion del costo de envio",
+      "url": "https://github.com/Andres004/Ventas-Totalizador-Final/commit/HEAD"
+    },
+    "stats": {
+      "total": 18,
+      "additions": 16,
+      "deletions": 2,
+      "date": "2026-03-10"
+    },
+    "coverage": 100,
+    "test_count": 30,
     "failed_tests": 0,
     "conclusion": "success"
   }
