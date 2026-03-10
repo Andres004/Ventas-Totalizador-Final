@@ -1,0 +1,21 @@
+[
+  {
+    "sha": "HEAD",
+    "author": "unknown",
+    "commit": {
+      "date": "2026-03-10T09:18:14.000Z",
+      "message": "feat: ingresar y mostrar el precio de items",
+      "url": "https://github.com/Andres004/Ventas-Totalizador-Final/commit/HEAD"
+    },
+    "stats": {
+      "total": 59,
+      "additions": 54,
+      "deletions": 5,
+      "date": "2026-03-10"
+    },
+    "coverage": 100,
+    "test_count": 2,
+    "failed_tests": 0,
+    "conclusion": "success"
+  }
+]

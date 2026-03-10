@@ -1,6 +1,7 @@
 class Totalizador {
   constructor() {
     this.cantidad = 0;
+    this.precio = 0;
   }
 
   setCantidad(cantidad) {
@@ -9,6 +10,14 @@ class Totalizador {
 
   getCantidad() {
     return this.cantidad;
+  }
+
+  setPrecio(precio) {
+    this.precio = precio;
+  }
+
+  getPrecio() {
+    return this.precio;
   }
 }
 
