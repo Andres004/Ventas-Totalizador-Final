@@ -38,12 +38,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "e3f37eb770d42b23845eac06f6a630d5df4fae84",
     "author": "unknown",
     "commit": {
       "date": "2026-03-10T09:30:05.000Z",
       "message": "feat: definir impuestos por estados y mostrarlos",
-      "url": "https://github.com/Andres004/Ventas-Totalizador-Final/commit/HEAD"
+      "url": "https://github.com/Andres004/Ventas-Totalizador-Final/commit/e3f37eb770d42b23845eac06f6a630d5df4fae84"
     },
     "stats": {
       "total": 42,
@@ -55,5 +55,24 @@
     "test_count": 4,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "unknown",
+    "commit": {
+      "date": "2026-03-10T09:36:22.000Z",
+      "message": "feat: Mostrar el precio total con el valor del impuesto según el precio neto y el porcentaje",
+      "url": "https://github.com/Andres004/Ventas-Totalizador-Final/commit/HEAD"
+    },
+    "stats": {
+      "total": 28,
+      "additions": 27,
+      "deletions": 1,
+      "date": "2026-03-10"
+    },
+    "coverage": 100,
+    "test_count": 6,
+    "failed_tests": 2,
+    "conclusion": "failure"
   }
 ]

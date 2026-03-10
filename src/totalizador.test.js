@@ -27,5 +27,20 @@ it("4. Mostrar el porcentaje de impuesto que tiene ese estado", () => {
     totalizador.setEstado("TX");
     expect(totalizador.getImpuestoPorcentaje()).toEqual(0.0625);
   });
-  
+
+it("5. debería calcular el monto del impuesto para CA (8.25% de 100)", () => {
+    let totalizador = new Totalizador();
+    totalizador.setCantidad(1);
+    totalizador.setPrecio(100);
+    totalizador.setEstado("CA");
+    expect(totalizador.getImpuestoMonto()).toEqual(8.25);
+  });
+
+  it("5. debería calcular el precio total (Neto + Impuesto) para CA", () => {
+    let totalizador = new Totalizador();
+    totalizador.setCantidad(1);
+    totalizador.setPrecio(100);
+    totalizador.setEstado("CA");
+    expect(totalizador.getTotal()).toEqual(108.25);
+  });
 });

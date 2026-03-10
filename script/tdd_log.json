@@ -28,9 +28,15 @@
     "testId": 2
   },
   {
-    "commitId": "HEAD",
+    "commitId": "e3f37eb770d42b23845eac06f6a630d5df4fae84",
     "commitName": "feat: definir impuestos por estados y mostrarlos",
     "commitTimestamp": 1773135006930,
     "testId": 2
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Mostrar el precio total con el valor del impuesto según el precio neto y el porcentaje",
+    "commitTimestamp": 1773135382999,
+    "testId": 3
   }
 ]

@@ -17,6 +17,8 @@ form.addEventListener("submit", (event) => {
   const cantidad = Number.parseInt(cantidadInput.value);
   const precio = Number.parseInt(precioInput.value);
   const estado = estadoInput.value.toUpperCase();
+  const impMontoDisplay = document.querySelector("#impuesto-monto-display");
+  const totalDisplay = document.querySelector("#total-display");
 
   totalizador.setCantidad(cantidad);
   totalizador.setPrecio(precio);
@@ -26,4 +28,6 @@ form.addEventListener("submit", (event) => {
   precDisplay.innerText = totalizador.getPrecio();
   netoDisplay.innerText = totalizador.getNeto();
   impPorcDisplay.innerText = (totalizador.getImpuestoPorcentaje() * 100).toFixed(2);
+  impMontoDisplay.innerText = totalizador.getImpuestoMonto().toFixed(2);
+  totalDisplay.innerText = totalizador.getTotal().toFixed(2);
 });
