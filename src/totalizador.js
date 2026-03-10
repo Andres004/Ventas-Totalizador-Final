@@ -5,7 +5,7 @@ class Totalizador {
     this.estado = "CA";
     this.categoria = "Varios";
     this.impuestos = { "UT": 0.0665, "NV": 0.08, "TX": 0.0625, "AL": 0.04, "CA": 0.0825 };
-    this.impuestosCategoria = { "Alimentos": 0,"Varios": 0,"Bebidas alcohólicas": 0.07 };
+    this.impuestosCategoria = { "Alimentos": 0,"Varios": 0,"Bebidas alcohólicas": 0.07,"Material de escritorio": 0, "Muebles": 0.03,"Electrónicos": 0.04,"Vestimenta": 0.02 };
 }
 
   getImpuestoCategoriaPorcentaje() {

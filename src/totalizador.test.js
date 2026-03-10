@@ -149,4 +149,28 @@ it("5. debería calcular el monto del impuesto para CA (8.25% de 100)", () => {
     expect(totalizador.getImpuestoCategoriaPorcentaje()).toEqual(0.07);
   });
 
+  it("22. debería obtener 0% para Material de escritorio", () => {
+    let totalizador = new Totalizador();
+    totalizador.setCategoria("Material de escritorio");
+    expect(totalizador.getImpuestoCategoriaPorcentaje()).toEqual(0);
+  });
+
+  it("23. debería obtener 3% para Muebles", () => {
+    let totalizador = new Totalizador();
+    totalizador.setCategoria("Muebles");
+    expect(totalizador.getImpuestoCategoriaPorcentaje()).toEqual(0.03);
+  });
+
+  it("24. debería obtener 4% para Electrónicos", () => {
+    let totalizador = new Totalizador();
+    totalizador.setCategoria("Electrónicos");
+    expect(totalizador.getImpuestoCategoriaPorcentaje()).toEqual(0.04);
+  });
+
+  it("25. debería obtener 2% para Vestimenta", () => {
+    let totalizador = new Totalizador();
+    totalizador.setCategoria("Vestimenta");
+    expect(totalizador.getImpuestoCategoriaPorcentaje()).toEqual(0.02);
+    });
+
 });

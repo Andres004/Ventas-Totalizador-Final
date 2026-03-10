@@ -168,9 +168,23 @@
     "testId": 12
   },
   {
-    "commitId": "HEAD",
+    "commitId": "2bc81ae3cf4ae7542c94e09ecb55a86478ef70ce",
     "commitName": "feat: crear impuesto para bebidas alcoholicas",
     "commitTimestamp": 1773140175922,
     "testId": 12
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 0,
+    "numTotalTests": 25,
+    "timestamp": 1773140261272,
+    "success": true,
+    "testId": 13
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: crear impuesto para resto de categorias",
+    "commitTimestamp": 1773140283515,
+    "testId": 13
   }
 ]

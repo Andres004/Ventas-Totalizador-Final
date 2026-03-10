@@ -228,12 +228,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "2bc81ae3cf4ae7542c94e09ecb55a86478ef70ce",
     "author": "unknown",
     "commit": {
       "date": "2026-03-10T10:56:14.000Z",
       "message": "feat: crear impuesto para bebidas alcoholicas",
-      "url": "https://github.com/Andres004/Ventas-Totalizador-Final/commit/HEAD"
+      "url": "https://github.com/Andres004/Ventas-Totalizador-Final/commit/2bc81ae3cf4ae7542c94e09ecb55a86478ef70ce"
     },
     "stats": {
       "total": 36,
@@ -243,6 +243,25 @@
     },
     "coverage": 100,
     "test_count": 21,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "unknown",
+    "commit": {
+      "date": "2026-03-10T10:58:02.000Z",
+      "message": "feat: crear impuesto para resto de categorias",
+      "url": "https://github.com/Andres004/Ventas-Totalizador-Final/commit/HEAD"
+    },
+    "stats": {
+      "total": 26,
+      "additions": 25,
+      "deletions": 1,
+      "date": "2026-03-10"
+    },
+    "coverage": 100,
+    "test_count": 25,
     "failed_tests": 0,
     "conclusion": "success"
   }
