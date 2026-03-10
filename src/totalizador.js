@@ -19,6 +19,10 @@ class Totalizador {
   getPrecio() {
     return this.precio;
   }
+
+  getNeto() {
+    return this.cantidad * this.precio;
+  }
 }
 
 export default Totalizador;

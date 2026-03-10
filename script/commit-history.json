@@ -1,11 +1,11 @@
 [
   {
-    "sha": "HEAD",
+    "sha": "65dec0ec5f3093f8302f704e9da7e2ad78f0118f",
     "author": "unknown",
     "commit": {
       "date": "2026-03-10T09:18:14.000Z",
       "message": "feat: ingresar y mostrar el precio de items",
-      "url": "https://github.com/Andres004/Ventas-Totalizador-Final/commit/HEAD"
+      "url": "https://github.com/Andres004/Ventas-Totalizador-Final/commit/65dec0ec5f3093f8302f704e9da7e2ad78f0118f"
     },
     "stats": {
       "total": 59,
@@ -15,6 +15,25 @@
     },
     "coverage": 100,
     "test_count": 2,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "unknown",
+    "commit": {
+      "date": "2026-03-10T09:22:13.000Z",
+      "message": "feat: calcular y mostrar el total neto",
+      "url": "https://github.com/Andres004/Ventas-Totalizador-Final/commit/HEAD"
+    },
+    "stats": {
+      "total": 16,
+      "additions": 14,
+      "deletions": 2,
+      "date": "2026-03-10"
+    },
+    "coverage": 100,
+    "test_count": 3,
     "failed_tests": 0,
     "conclusion": "success"
   }

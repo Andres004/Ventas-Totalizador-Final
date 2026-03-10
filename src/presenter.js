@@ -5,6 +5,7 @@ const precioInput = document.querySelector("#precio-input");
 const form = document.querySelector("#totalizador-form");
 const cantDisplay = document.querySelector("#cantidad-display");
 const precDisplay = document.querySelector("#precio-display");
+const netoDisplay = document.querySelector("#neto-display");
 
 const totalizador = new Totalizador();
 
@@ -19,4 +20,5 @@ form.addEventListener("submit", (event) => {
 
   cantDisplay.innerText = totalizador.getCantidad();
   precDisplay.innerText = totalizador.getPrecio();
+  netoDisplay.innerText = totalizador.getNeto();
 });

@@ -8,9 +8,15 @@
     "testId": 0
   },
   {
-    "commitId": "HEAD",
+    "commitId": "65dec0ec5f3093f8302f704e9da7e2ad78f0118f",
     "commitName": "feat: ingresar y mostrar el precio de items",
     "commitTimestamp": 1773134295566,
     "testId": 0
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: calcular y mostrar el total neto",
+    "commitTimestamp": 1773134534387,
+    "testId": 1
   }
 ]

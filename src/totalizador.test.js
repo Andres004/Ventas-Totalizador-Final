@@ -15,5 +15,10 @@ it("2. Ingresar el precio por item y mostrar en pantalla lo ingresado", () => {
     expect(totalizador.getPrecio()).toEqual(3);
   });
 
-
+it("3. Mostrar el precio neto (cantidad items x precio item)", () => {
+    let totalizador = new Totalizador();
+    totalizador.setCantidad(20);
+    totalizador.setPrecio(3);
+    expect(totalizador.getNeto()).toEqual(60);
+  });
 });
