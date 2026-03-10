@@ -33,6 +33,28 @@ class Totalizador {
   getImpuestoPorcentaje() {
     return this.impuestos[this.estado] || 0;
   }
+
+  getDescuentoPorcentaje() {
+    let neto = this.getNeto();
+    if (neto >= 1000) return 0.03;
+    return 0;
+  }
+
+  getDescuentoMonto() {
+    return this.getNeto() * this.getDescuentoPorcentaje();
+  }
+
+  getPrecioConDescuento() {
+    return this.getNeto() - this.getDescuentoMonto();
+  }
+  getImpuestoMonto() {
+    return this.getPrecioConDescuento() * this.getImpuestoPorcentaje();
+  }
+
+  getTotal() {
+    return this.getPrecioConDescuento() + this.getImpuestoMonto();
+  }
+
 }
 
 export default Totalizador;

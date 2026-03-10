@@ -43,4 +43,52 @@ it("5. debería calcular el monto del impuesto para CA (8.25% de 100)", () => {
     totalizador.setEstado("CA");
     expect(totalizador.getTotal()).toEqual(108.25);
   });
+
+  it("6. debería calcular el total con el impuesto de AL (4.00%)", () => {
+    let totalizador = new Totalizador();
+    totalizador.setCantidad(1);
+    totalizador.setPrecio(100);
+    totalizador.setEstado("AL");
+    expect(totalizador.getTotal()).toEqual(104);
+  });
+
+  it("7. debería calcular el total con el impuesto de NV (8.00%)", () => {
+    let totalizador = new Totalizador();
+    totalizador.setCantidad(1);
+    totalizador.setPrecio(100);
+    totalizador.setEstado("NV");
+    expect(totalizador.getTotal()).toEqual(108);
+  });
+
+  it("8. debería calcular el total con el impuesto de UT (6.65%)", () => {
+    let totalizador = new Totalizador();
+    totalizador.setCantidad(1);
+    totalizador.setPrecio(100);
+    totalizador.setEstado("UT");
+    expect(totalizador.getTotal()).toEqual(106.65);
+  });
+
+  it("9. debería calcular el total con el impuesto de TX (6.25%)", () => {
+    let totalizador = new Totalizador();
+    totalizador.setCantidad(1);
+    totalizador.setPrecio(100);
+    totalizador.setEstado("TX");
+    expect(totalizador.getTotal()).toEqual(106.25);
+  });
+
+  it("10. debería obtener 3% de descuento para un neto de 1000", () => {
+    let totalizador = new Totalizador();
+    totalizador.setCantidad(10);
+    totalizador.setPrecio(100); // Neto = 1000
+    expect(totalizador.getDescuentoPorcentaje()).toEqual(0.03);
+  });
+
+  it("10. debería calcular el total con descuento e impuesto (Neto 1000, Desc 3%, Impuesto CA 8.25%)", () => {
+    let totalizador = new Totalizador();
+    totalizador.setCantidad(10);
+    totalizador.setPrecio(100); // Neto = 1000
+    totalizador.setEstado("CA");
+    expect(totalizador.getTotal()).toEqual(1050.025);
+   });
+
 });

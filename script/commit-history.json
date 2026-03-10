@@ -57,12 +57,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "64bf18e7205776a89cd1dade9d5e881b87ff9722",
     "author": "unknown",
     "commit": {
       "date": "2026-03-10T09:36:22.000Z",
       "message": "feat: Mostrar el precio total con el valor del impuesto según el precio neto y el porcentaje",
-      "url": "https://github.com/Andres004/Ventas-Totalizador-Final/commit/HEAD"
+      "url": "https://github.com/Andres004/Ventas-Totalizador-Final/commit/64bf18e7205776a89cd1dade9d5e881b87ff9722"
     },
     "stats": {
       "total": 28,
@@ -74,5 +74,24 @@
     "test_count": 6,
     "failed_tests": 2,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "unknown",
+    "commit": {
+      "date": "2026-03-10T09:50:00.000Z",
+      "message": "feat: aplicar para todos los estados",
+      "url": "https://github.com/Andres004/Ventas-Totalizador-Final/commit/HEAD"
+    },
+    "stats": {
+      "total": 96,
+      "additions": 86,
+      "deletions": 10,
+      "date": "2026-03-10"
+    },
+    "coverage": 100,
+    "test_count": 12,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

@@ -34,9 +34,39 @@
     "testId": 2
   },
   {
-    "commitId": "HEAD",
+    "commitId": "64bf18e7205776a89cd1dade9d5e881b87ff9722",
     "commitName": "feat: Mostrar el precio total con el valor del impuesto según el precio neto y el porcentaje",
     "commitTimestamp": 1773135382999,
     "testId": 3
+  },
+  {
+    "numPassedTests": 0,
+    "failedTests": 0,
+    "numTotalTests": 0,
+    "timestamp": 1773135440368,
+    "success": false,
+    "testId": 4
+  },
+  {
+    "numPassedTests": 4,
+    "failedTests": 6,
+    "numTotalTests": 10,
+    "timestamp": 1773135538401,
+    "success": false,
+    "testId": 4
+  },
+  {
+    "numPassedTests": 10,
+    "failedTests": 0,
+    "numTotalTests": 10,
+    "timestamp": 1773135608780,
+    "success": true,
+    "testId": 4
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: aplicar para todos los estados",
+    "commitTimestamp": 1773136201727,
+    "testId": 4
   }
 ]
