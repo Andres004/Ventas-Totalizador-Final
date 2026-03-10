@@ -247,12 +247,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f5e36671713262ce9ef131873c3ca2ad9069b75a",
     "author": "unknown",
     "commit": {
       "date": "2026-03-10T10:58:02.000Z",
       "message": "feat: crear impuesto para resto de categorias",
-      "url": "https://github.com/Andres004/Ventas-Totalizador-Final/commit/HEAD"
+      "url": "https://github.com/Andres004/Ventas-Totalizador-Final/commit/f5e36671713262ce9ef131873c3ca2ad9069b75a"
     },
     "stats": {
       "total": 26,
@@ -262,6 +262,25 @@
     },
     "coverage": 100,
     "test_count": 25,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "unknown",
+    "commit": {
+      "date": "2026-03-10T11:15:37.000Z",
+      "message": "feat: crear y mostrar peso volumetrico",
+      "url": "https://github.com/Andres004/Ventas-Totalizador-Final/commit/HEAD"
+    },
+    "stats": {
+      "total": 80,
+      "additions": 67,
+      "deletions": 13,
+      "date": "2026-03-10"
+    },
+    "coverage": 100,
+    "test_count": 29,
     "failed_tests": 0,
     "conclusion": "success"
   }

@@ -43,7 +43,11 @@
             </select>
         </div>
         <br>
-
+        <div>
+    <label for="peso-input">Peso volumétrico por unidad:</label>
+    <input type="number" id="peso-input">
+</div>
+<br>
         <br>
         <button type="submit" id="totalizar-btn">Calcular</button>
     </form>
@@ -52,9 +56,11 @@
     <p style="text-align: end;">Cantidad: <strong><span id="cantidad-display">0</span></strong></p>
     <p style="text-align: end;">Precio por ítem: <strong><span id="precio-display">0</span></strong></p>
     <p style="text-align: end;">Precio Neto: $<strong><span id="neto-display">0</span></strong></p>
-    <p style="text-align: end;">Descuento (<span id="desc-porc-display">0</span>): <strong>-$<span id="desc-monto-display">0</span></strong></p>
+    <p style="text-align: end;">Descuento total (<span id="desc-porc-display">0</span>): <strong>-$<span id="desc-monto-display">0</span></strong></p>
+    <p style="text-align: end;">Descuento por categoría extra: <strong><span id="desc-cat-display">0%</span></strong></p>
     <p style="text-align: end;">Impuesto por categoría (<span id="imp-cat-porc-display">0%</span>): <strong>Adicional</strong></p>
     <p style="text-align: end;">Impuesto para el estado (<span id="imp-porc-display">0</span>): <strong>$<span id="imp-monto-display">0</span></strong></p>
+    <p style="text-align: end;">Peso volumétrico: <strong><span id="peso-display">0</span></strong></p>
 
     <hr>
     <p style="text-align: end; font-size: 1.2em;"><strong>Precio Total: $<span id="total-display">0</span></strong></p>

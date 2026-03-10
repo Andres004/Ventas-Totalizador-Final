@@ -173,4 +173,29 @@ it("5. debería calcular el monto del impuesto para CA (8.25% de 100)", () => {
     expect(totalizador.getImpuestoCategoriaPorcentaje()).toEqual(0.02);
     });
 
+  it("26. debería obtener descuento adicional de 2% para Alimentos", () => {
+    let totalizador = new Totalizador();
+    totalizador.setCategoria("Alimentos");
+    expect(totalizador.getDescuentoCategoriaPorcentaje()).toEqual(0.02);
+  });
+
+  it("27. debería obtener descuento adicional de 1.5% para Material de escritorio", () => {
+    let totalizador = new Totalizador();
+    totalizador.setCategoria("Material de escritorio");
+    expect(totalizador.getDescuentoCategoriaPorcentaje()).toEqual(0.015);
+  });
+
+  it("28. debería obtener descuento adicional de 1% para Electrónicos", () => {
+    let totalizador = new Totalizador();
+    totalizador.setCategoria("Electrónicos");
+    expect(totalizador.getDescuentoCategoriaPorcentaje()).toEqual(0.01);
+  });
+
+  it("29. debería permitir ingresar y obtener el peso volumétrico", () => {
+    let totalizador = new Totalizador();
+    totalizador.setPesoVolumetrico(5);
+    expect(totalizador.getPesoVolumetrico()).toEqual(5);
+  });
+
+
 });
