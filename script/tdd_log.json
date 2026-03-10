@@ -128,9 +128,15 @@
     "testId": 7
   },
   {
-    "commitId": "HEAD",
+    "commitId": "a48435a1aef522e5e2349210698a6488ed61b700",
     "commitName": "feat: calcular total con descuento para 30000",
     "commitTimestamp": 1773137047187,
     "testId": 8
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: mostrar porcentajes por simbolo",
+    "commitTimestamp": 1773138936019,
+    "testId": 9
   }
 ]

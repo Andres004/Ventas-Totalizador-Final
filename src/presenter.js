@@ -35,10 +35,10 @@ form.addEventListener("submit", (event) => {
 
   netoDisplay.innerText = totalizador.getNeto().toFixed(2);
   
-  descPorcDisplay.innerText = (totalizador.getDescuentoPorcentaje() * 100);
+  descPorcDisplay.innerText = (totalizador.getDescuentoPorcentaje() * 100) + "%";
   descMontoDisplay.innerText = totalizador.getDescuentoMonto().toFixed(2);
 
-  impPorcDisplay.innerText = (totalizador.getImpuestoPorcentaje() * 100).toFixed(2);
+  impPorcDisplay.innerText = (totalizador.getImpuestoPorcentaje() * 100).toFixed(2) + "%";
   impMontoDisplay.innerText = totalizador.getImpuestoMonto().toFixed(2);
 
   totalDisplay.innerText = totalizador.getTotal().toFixed(2);
