@@ -36,6 +36,7 @@ class Totalizador {
 
   getDescuentoPorcentaje() {
     let neto = this.getNeto();
+    if (neto >= 30000) return 0.15;
     if (neto >= 10000) return 0.10;
     if (neto >= 7000) return 0.07;
     if (neto >= 3000) return 0.05;

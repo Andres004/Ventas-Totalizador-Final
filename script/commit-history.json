@@ -133,12 +133,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f69a208e809c18dfa34f06929acb478caab4ba17",
     "author": "unknown",
     "commit": {
       "date": "2026-03-10T10:02:26.000Z",
       "message": "feat: calcular total con descuento para 1000",
-      "url": "https://github.com/Andres004/Ventas-Totalizador-Final/commit/HEAD"
+      "url": "https://github.com/Andres004/Ventas-Totalizador-Final/commit/f69a208e809c18dfa34f06929acb478caab4ba17"
     },
     "stats": {
       "total": 9,
@@ -148,6 +148,25 @@
     },
     "coverage": 100,
     "test_count": 15,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "unknown",
+    "commit": {
+      "date": "2026-03-10T10:04:06.000Z",
+      "message": "feat: calcular total con descuento para 30000",
+      "url": "https://github.com/Andres004/Ventas-Totalizador-Final/commit/HEAD"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 9,
+      "deletions": 1,
+      "date": "2026-03-10"
+    },
+    "coverage": 100,
+    "test_count": 16,
     "failed_tests": 0,
     "conclusion": "success"
   }

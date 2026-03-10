@@ -122,9 +122,15 @@
     "testId": 7
   },
   {
-    "commitId": "HEAD",
+    "commitId": "f69a208e809c18dfa34f06929acb478caab4ba17",
     "commitName": "feat: calcular total con descuento para 1000",
     "commitTimestamp": 1773136947031,
     "testId": 7
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: calcular total con descuento para 30000",
+    "commitTimestamp": 1773137047187,
+    "testId": 8
   }
 ]
