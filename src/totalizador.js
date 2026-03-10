@@ -3,9 +3,18 @@ class Totalizador {
     this.cantidad = 0;
     this.precio = 0;
     this.estado = "CA";
+    this.categoria = "Varios";
     this.impuestos = { "UT": 0.0665, "NV": 0.08, "TX": 0.0625, "AL": 0.04, "CA": 0.0825 };
   }
 
+  setCategoria(categoria) {
+    this.categoria = categoria;
+  }
+
+  getCategoria() {
+    return this.categoria;
+  }
+  
   setCantidad(cantidad) {
     this.cantidad = cantidad;
   }

@@ -4,6 +4,7 @@ const form = document.querySelector("#totalizador-form");
 const cantidadInput = document.querySelector("#cantidad-input");
 const precioInput = document.querySelector("#precio-input");
 const estadoSelect = document.querySelector("#estado-select");
+const categoriaSelect = document.querySelector("#categoria-select");
 
 // Selectores para mostrar resultados
 const cantDisplay = document.querySelector("#cantidad-display"); // AGREGADO
@@ -23,10 +24,12 @@ form.addEventListener("submit", (event) => {
   const cantidad = Number.parseInt(cantidadInput.value);
   const precio = Number.parseFloat(precioInput.value);
   const estado = estadoSelect.value;
+  const categoria = categoriaSelect.value;
 
   totalizador.setCantidad(cantidad);
   totalizador.setPrecio(precio);
   totalizador.setEstado(estado);
+  totalizador.setCategoria(categoria);
 
   cantDisplay.innerText = totalizador.getCantidad();
   precDisplay.innerText = totalizador.getPrecio().toFixed(2);

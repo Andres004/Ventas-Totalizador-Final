@@ -140,9 +140,15 @@
     "testId": 9
   },
   {
-    "commitId": "HEAD",
+    "commitId": "f17ec96b105f3f4905cc01cddbc9f2138a9308a8",
     "commitName": "feat: definir california como predeterminado y mostrar una lista de opciones de esrados",
     "commitTimestamp": 1773139303020,
     "testId": 10
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: crear categorias y definir varios como predeterminada",
+    "commitTimestamp": 1773139572072,
+    "testId": 11
   }
 ]

@@ -126,4 +126,15 @@ it("5. debería calcular el monto del impuesto para CA (8.25% de 100)", () => {
     expect(totalizador.getImpuestoPorcentaje()).toEqual(0.0825);
   });
 
+  it("19. debería permitir setear y obtener la categoría del producto", () => {
+    let totalizador = new Totalizador();
+    totalizador.setCategoria("Alimentos");
+    expect(totalizador.getCategoria()).toEqual("Alimentos");
+  });
+
+  it("19. debería tener 'Varios' como categoría por defecto", () => {
+    let totalizador = new Totalizador();
+    expect(totalizador.getCategoria()).toEqual("Varios");
+  });
+
 });

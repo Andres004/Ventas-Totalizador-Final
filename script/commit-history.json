@@ -190,12 +190,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f17ec96b105f3f4905cc01cddbc9f2138a9308a8",
     "author": "unknown",
     "commit": {
       "date": "2026-03-10T10:41:41.000Z",
       "message": "feat: definir california como predeterminado y mostrar una lista de opciones de esrados",
-      "url": "https://github.com/Andres004/Ventas-Totalizador-Final/commit/HEAD"
+      "url": "https://github.com/Andres004/Ventas-Totalizador-Final/commit/f17ec96b105f3f4905cc01cddbc9f2138a9308a8"
     },
     "stats": {
       "total": 28,
@@ -205,6 +205,25 @@
     },
     "coverage": 100,
     "test_count": 17,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "unknown",
+    "commit": {
+      "date": "2026-03-10T10:46:11.000Z",
+      "message": "feat: crear categorias y definir varios como predeterminada",
+      "url": "https://github.com/Andres004/Ventas-Totalizador-Final/commit/HEAD"
+    },
+    "stats": {
+      "total": 39,
+      "additions": 38,
+      "deletions": 1,
+      "date": "2026-03-10"
+    },
+    "coverage": 100,
+    "test_count": 19,
     "failed_tests": 0,
     "conclusion": "success"
   }
