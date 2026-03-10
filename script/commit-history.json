@@ -323,17 +323,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "d5eb2c1e129b008a6be49e182ec4301be7c170a7",
     "author": "unknown",
     "commit": {
       "date": "2026-03-10T11:57:44.000Z",
       "message": "style: aplicacion de css",
-      "url": "https://github.com/Andres004/Ventas-Totalizador-Final/commit/HEAD"
+      "url": "https://github.com/Andres004/Ventas-Totalizador-Final/commit/d5eb2c1e129b008a6be49e182ec4301be7c170a7"
     },
     "stats": {
       "total": 368,
       "additions": 294,
       "deletions": 74,
+      "date": "2026-03-10"
+    },
+    "coverage": 93.85,
+    "test_count": 37,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "unknown",
+    "commit": {
+      "date": "2026-03-10T13:56:39.000Z",
+      "message": "fix: correcion y reordenamiendo de presenter e index",
+      "url": "https://github.com/Andres004/Ventas-Totalizador-Final/commit/HEAD"
+    },
+    "stats": {
+      "total": 37,
+      "additions": 16,
+      "deletions": 21,
       "date": "2026-03-10"
     },
     "coverage": 93.85,
